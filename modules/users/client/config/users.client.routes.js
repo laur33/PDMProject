@@ -18,7 +18,7 @@ angular.module('users').config(['$stateProvider',
         templateUrl: 'modules/users/client/views/settings/edit-profile.client.view.html'
       })
       .state('settings.submissionsList', {
-        url: '',
+        url: '/mysubmissions',
         templateUrl: 'modules/submissions/client/views/mysubmissions-submissions.client.view.html',
         controller: 'SubmissionsListController',
         controllerAs: 'vm',
