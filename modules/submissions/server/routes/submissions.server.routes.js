@@ -9,8 +9,9 @@ var submissionsPolicy = require('../policies/submissions.server.policy'),
 module.exports = function(app) {
   // Submissions Routes
   app.route('/api/submissions').all(submissionsPolicy.isAllowed)
-    .get(submissions.list)
+    .get(submissions.myList)
     .post(submissions.create);
+
 
   app.route('/api/submissions/:submissionId').all(submissionsPolicy.isAllowed)
     .get(submissions.read)
