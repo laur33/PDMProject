@@ -83,8 +83,6 @@ exports.delete = function(req, res) {
  */
 exports.list = function(req, res) {
 
-  console.log('-------------------------- REQ', $scope.current);
-
   Submission.find().sort('-created').populate('user', 'displayName').exec(function(err, submissions) {
     if (err) {
       return res.status(400).send({

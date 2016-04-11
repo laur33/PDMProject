@@ -26,7 +26,7 @@
       .state('submissions.myList', {
         url: '',
         templateUrl: 'modules/submissions/client/views/mysubmissions-submissions.client.view.html',
-        controller: 'SubmissionsListController',
+        controller: 'MySubmissionsListController',
         controllerAs: 'vm',
         data: {
           pageTitle: 'My Submissions'
