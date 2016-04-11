@@ -9,6 +9,7 @@ var path = require('path'),
   errorHandler = require(path.resolve('./modules/core/server/controllers/errors.server.controller')),
   _ = require('lodash');
 
+
 /**
  * Create a Submission
  */
@@ -81,6 +82,8 @@ exports.delete = function(req, res) {
  * List of Submissions
  */
 exports.list = function(req, res) {
+
+  console.log('-------------------------- REQ', $scope.current);
 
   Submission.find().sort('-created').populate('user', 'displayName').exec(function(err, submissions) {
     if (err) {

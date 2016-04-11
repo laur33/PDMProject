@@ -23,7 +23,7 @@ angular.module('users').config(['$stateProvider',
         controller: 'SubmissionsListController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'Submissions List'
+          pageTitle: 'My Submissions'
         }
       })
       .state('settings.password', {
