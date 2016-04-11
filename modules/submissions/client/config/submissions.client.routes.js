@@ -23,15 +23,15 @@
           pageTitle: 'Submissions List'
         }
       })
-      /*.state('submissions.myList', {
+      .state('submissions.myList', {
         url: '',
         templateUrl: 'modules/submissions/client/views/mysubmissions-submissions.client.view.html',
-        controller: 'SubmissionsListController',
+        controller: 'MySubmissionsListController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'Submissions userList'
+          pageTitle: 'My Submissions'
         }
-      })*/
+      })
       .state('submissions.create', {
         url: '/create',
         templateUrl: 'modules/submissions/client/views/form-submission.client.view.html',

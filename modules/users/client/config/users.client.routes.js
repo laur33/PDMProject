@@ -20,10 +20,10 @@ angular.module('users').config(['$stateProvider',
       .state('settings.submissionsList', {
         url: '/mysubmissions',
         templateUrl: 'modules/submissions/client/views/mysubmissions-submissions.client.view.html',
-        controller: 'SubmissionsListController',
+        controller: 'MySubmissionsListController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'Submissions List'
+          pageTitle: 'My Submissions'
         }
       })
       .state('settings.password', {
